@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <style>
- .back{
+ .back
+ {
    background-color:white;
-   background-image:url('study1.jpg');
+   background-image:url('student1.jpg');
+   background-size: cover;
    padding:30px;
+   font-weight: bold;
   }
   .address_box{
    border-style:dotted;
@@ -12,49 +15,67 @@
    border-color:red;
    }
   .input_box{
-   word-spacing:3px;
-   border-radius:20px;
+   border-radius: 7px;
    border-color:grey;
+   padding: 5px 20px;
+   line-height: 28px;
   }
+  .input_box{
+   border-radius: 7px;
+   border-color:grey;
+   padding: 8px 25px;
+   line-height: 28px;
+  }
+  select{
+   border-radius: 7px;
+   border-color: grey;
+   padding: 7px 15px;
+   line-height: 28px;
+  }
+  label{
+  display:inline-block;
+  width:300px;
+  margin-bottom:10px;
+  text-align:left;
+  font-size:20px;
+  width: 150px;
+}
 </style>
 <head>
- <h2 style="text-align:center">STUDENT DETAILS-SIGN UP</h2>
+ <h2 style="text-align:center;color:green">STUDENT DETAILS-SIGN UP</h2>
 </head>
 <body>
- <form action="/studentinfo.txt" class="back">
-    FIRST NAME:<br>
-   <input type="text" name="FIRST NAME"><br>
-    MIDDLE NAME:<br>
-   <input type="text" name="MIDDLE NAME"><br>
-    LAST NAME:<br>
-   <input type="text" name="LAST NAME"><br>
-    ADDRESS:<br>
-   <input type="text" placeholder="FLAT NO:"><br>
-   <input type="text" placeholder="STREET:"><br>
-   <input type="text" placeholder="COLONY/LOCAL-AREA:"><br>
-   <input type="text" placeholder="POSTOFFICE/TALUK:"><br>
-   <input type="text" placeholder="CITY:"><br>
-   <input type="text" placeholder="DISTRICT:"><br>
-   <input type="text" placeholder="ZIP-CODE:"><br>
-   </p>
-   EMAIL-ID:<br>
-   <input type="email" name="EMAIL-ID"><br>
-   CONTACT NUMBER:<br>
-   <input type="text" name="CONTACT NUMBER"><br>
-   Qualification:
-   <select>
+ <form action="/studentinfo.txt" class="back" style="color:white">
+   <label>FIRST NAME:</label>
+   <input type="text" name="FIRST NAME" class="input_box"><label></label>
+   <label>LAST NAME:</label>
+   <input type="text" name="LAST NAME" class="input_box"><label></label><br><br>
+   <label>EMAIL-ID:</label>
+   <input type="email" name="EMAIL-ID" class="input_box"><label></label>
+    <label>CONTACT NUMBER:</label>
+   <input type="text" name="CONTACT NUMBER" class="input_box"><br><br>
+   <label>QUALIFIED:</label>
+   <select class="input_box">
     <option value="PG">PG</option>
     <option value="UG">UG</option>
     <option value="HSC">HSC</option>
     <option value="SSLC">SSLC</option>
-   </select><br>
-   Course:
-   <select>
+   </select><label></label><label></label>
+   <label>COURSE:</label>
+   <select class="input_box1">
     <option value="NEET">NEET</option>
     <option value="JEE">JEE</option>
     <option value="CAT">CAT</option>
     <option value="GMAT">GMAT</option>
    </select><br><br>
+   <label>ADDRESS:</label>
+   <input type="text" placeholder="FLAT NO:" class="input_box"><br>
+   <label></label> <input type="text" placeholder="STREET:" class="input_box"><br>
+   <label></label> <input type="text" placeholder="COLONY/LOCAL-AREA:" class="input_box"><br>
+   <label></label> <input type="text" placeholder="POSTOFFICE/TALUK:" class="input_box"><br>
+   <label></label> <input type="text" placeholder="CITY:" class="input_box"><br>
+   <label></label> <input type="text" placeholder="DISTRICT:" class="input_box"><br>
+   <label></label> <input type="text" placeholder="ZIP-CODE:" class="input_box"><br>
    <button type="submit" value="submit" style="margin:auto;display:block;background-color:green;height:50px;width:100px;border-radius:15px;color:white">SUBMIT</button>
    </form>
 </body>
