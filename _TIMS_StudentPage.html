@@ -45,37 +45,36 @@
  <h2 style="text-align:center;color:green">STUDENT DETAILS-SIGN UP</h2>
 </head>
 <body>
- <form action="/studentinfo.txt" class="back" style="color:white">
-   <label>FIRST NAME:</label>
-   <input type="text" name="FIRST NAME" class="input_box"><label></label>
-   <label>LAST NAME:</label>
-   <input type="text" name="LAST NAME" class="input_box"><label></label><br><br>
-   <label>EMAIL-ID:</label>
-   <input type="email" name="EMAIL-ID" class="input_box"><label></label>
-    <label>CONTACT NUMBER:</label>
-   <input type="text" name="CONTACT NUMBER" class="input_box"><br><br>
-   <label>QUALIFIED:</label>
-   <select class="input_box">
-    <option value="PG">PG</option>
-    <option value="UG">UG</option>
-    <option value="HSC">HSC</option>
-    <option value="SSLC">SSLC</option>
-   </select><label></label><label></label>
-   <label>COURSE:</label>
-   <select class="input_box1">
+ <form action="student_page.php" class="back" style="color:white" method="POST">
+   <label>FIRST NAME :</label>
+   <input type="text" name="fname" class="input_box"><label></label>
+   <label>EMAIL-ID :</label>
+   <input type="email" name="EMAIL-ID" class="input_box"><label></label><br><br>
+   <label>LAST NAME :</label>
+   <input type="text" name="LASTNAME" class="input_box"><label></label>
+   <label>APPLY FOR :</label>
+   <select class="input_box1" name="COURSE">
     <option value="NEET">NEET</option>
     <option value="JEE">JEE</option>
     <option value="CAT">CAT</option>
     <option value="GMAT">GMAT</option>
    </select><br><br>
-   <label>ADDRESS:</label>
-   <input type="text" placeholder="FLAT NO:" class="input_box"><br>
-   <label></label> <input type="text" placeholder="STREET:" class="input_box"><br>
-   <label></label> <input type="text" placeholder="COLONY/LOCAL-AREA:" class="input_box"><br>
-   <label></label> <input type="text" placeholder="POSTOFFICE/TALUK:" class="input_box"><br>
-   <label></label> <input type="text" placeholder="CITY:" class="input_box"><br>
-   <label></label> <input type="text" placeholder="DISTRICT:" class="input_box"><br>
-   <label></label> <input type="text" placeholder="ZIP-CODE:" class="input_box"><br>
+   <label>MOBILE :</label>
+   <input type="text" name="MOBILE" class="input_box"><br><br>
+   <label>QUALIFIED :</label>
+   <select class="input_box" name="ED_QUALIFICATION">
+    <option value="PG">PG</option>
+    <option value="UG">UG</option>
+    <option value="HSC">HSC</option>
+    <option value="SSLC">SSLC</option>
+   </select><br><br>
+   <label>ADDRESS :</label>
+   <input type="text" placeholder="FLAT NO:" name="FLAT_NO" class="input_box"><br>
+   <label></label> <input type="text" placeholder="STREET:" name="STREET" class="input_box"><br>
+   <label></label> <input type="text" placeholder="COLONY/LOCAL-AREA:" name="LOCAL_AREA" class="input_box"><br>
+   <label></label> <input type="text" placeholder="CITY:" name="CITY" class="input_box"><br>
+   <label></label> <input type="text" placeholder="DISTRICT:" name="DISTRICT" class="input_box"><br>
+   <label></label> <input type="text" placeholder="ZIP-CODE:" name="ZIPCODE" class="input_box"><br>
    <button type="submit" value="submit" style="margin:auto;display:block;background-color:green;height:50px;width:100px;border-radius:15px;color:white">SUBMIT</button>
    </form>
 </body>
